@@ -1,0 +1,38 @@
+//import font Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+//import font Nunito
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+//import file variables
+@import "./variables";
+
+//import file login
+@import "./login";
+@import "./login-dark";
+
+//import file register
+@import "./register";
+
+//import file confirmation
+@import "./confirmation";
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+a,
+p,
+ul, li,
+label {
+    margin-bottom: 0;
+}

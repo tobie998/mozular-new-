@@ -1,0 +1,230 @@
+.login {
+    padding: 0 1rem;
+    margin: 2rem 0;
+
+    .login-card {
+        margin-bottom: 2rem;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .login-form {
+        font-family: 'Montserrat';
+
+        h3 {
+            font-size: 1.59375rem;
+            font-weight: 600;
+            line-height: 31px;
+            color: $black-0;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-main {
+
+            .main-input {
+
+                label {
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    line-height: 18px;
+                    letter-spacing: -1%;
+                    color: $black-5;
+                }
+
+                input[type="text"],
+                input[type="password"] {
+                    width: 100%;
+                    display: block;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid $black-4;
+                    padding: 0.75rem 0;
+                    font-size: 1rem;
+                    background: inherit;
+                }
+
+                ::placeholder {
+                    font-family: 'Montserrat';
+                    font-size: 1rem;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: $black-5;
+                }
+
+                input:focus {
+                    border-bottom: 2px solid $main-color;
+                    background: url(../images/Delete.png) no-repeat 100%;
+                    background-size: 24px;
+                }
+
+                input:focus::-webkit-input-placeholder {
+                    color: $black-1;
+                    font-weight: 500;
+                }
+
+                input[type="password"] {
+                    font-size: 1.5rem;
+                    font-family: monospace;
+                    height: 48px;
+                    padding: 0.75rem 0;
+                }
+            }
+
+            .username-input {
+                margin-bottom: 1.375rem;
+            }
+        }
+
+        .form-btn {
+            margin-top: 2rem;
+
+            .btn-forget {
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 18px;
+                letter-spacing: -1%;
+                color: $black-0;
+            }
+
+            .btn-login {
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 17.07px;
+                letter-spacing: 1.25%;
+                padding: 0.5rem 4rem;
+                margin-top: 1rem;
+                border: none;
+                outline: none;
+                color: $black-0;
+                background: $yellow-light;
+                border-radius: 24px;
+                transition: all 0.2s ease-out;
+
+                &:hover {
+                    color: $yellow-light;
+                    background: $black-0;
+                    transition: all 0.2s ease;
+                }
+            }
+        }
+
+        .form-signup {
+            margin-top: 1rem;
+
+            .signup-text {
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 18px;
+                color: $black-5;
+
+                span {
+                    margin-left: 0.5rem;
+
+                    a {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        line-height: 19.5px;
+                        letter-spacing: 1.25%;
+                        color: $yellow-light;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .login {
+    
+        .login-form {
+    
+            .form-btn {
+    
+                .btn-login {
+                    margin: 0 0 0 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .login {
+        padding: 0 3rem;
+        margin: 4rem 0 2rem;
+    
+        .login-form {
+    
+            h3 {
+                font-size: 3.1875rem;
+                margin-bottom: 3.25rem;
+            }
+    
+            .form-btn {
+                margin-top: 3.5rem;
+    
+                .btn-login {
+                    padding: 0.84375rem 5.875rem;
+                    margin: 0 0 0 6.375rem;
+                }
+            }
+    
+            .form-signup {
+                margin-top: 2.8125rem;
+    
+                .signup-text {
+    
+                    span {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .login {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-gap: 2rem;
+        align-items: center;
+        padding: 8.3125rem 3rem 6.875rem;
+        margin: 0;
+        height: 100vh;
+
+        .login-card {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .login {
+        grid-template-columns: 55% 38%;
+        grid-gap: 5rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .login {
+        grid-template-columns: 929.5px 500px;
+        grid-gap: 10.65625rem;
+        padding: 8.3125rem 209px 6.875rem 111px;
+
+        .login-form {
+
+            .form-btn {
+
+                .btn-login {
+                    margin: 0 0 0 6.3rem;
+                }
+            }
+        }
+    }
+}
+
+

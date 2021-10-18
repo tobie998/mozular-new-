@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/*  White color */
+/* Black color */
+/* Primary color */
+/* Gradient */
+/* Alert color*/
+.login {
+  padding: 0 1rem;
+  margin: 2rem 0;
+}
+.login .login-card {
+  margin-bottom: 2rem;
+}
+.login .login-card svg {
+  width: 100%;
+  height: 100%;
+}
+.login .login-form {
+  font-family: "Montserrat";
+}
+.login .login-form h3 {
+  font-size: 1.59375rem;
+  font-weight: 600;
+  line-height: 31px;
+  color: #1A1A1A;
+  margin-bottom: 1.5rem;
+}
+.login .login-form .form-main .main-input label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -1%;
+  color: #9F9F9F;
+}
+.login .login-form .form-main .main-input input[type=text],
+.login .login-form .form-main .main-input input[type=password] {
+  width: 100%;
+  display: block;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #616161;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  background: inherit;
+}
+.login .login-form .form-main .main-input ::-moz-placeholder {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+.login .login-form .form-main .main-input :-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+.login .login-form .form-main .main-input ::placeholder {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+.login .login-form .form-main .main-input input:focus {
+  border-bottom: 2px solid #E1C579;
+  background: url(../images/Delete.png) no-repeat 100%;
+  background-size: 24px;
+}
+.login .login-form .form-main .main-input input:focus::-webkit-input-placeholder {
+  color: #1F1F1F;
+  font-weight: 500;
+}
+.login .login-form .form-main .main-input input[type=password] {
+  font-size: 1.5rem;
+  font-family: monospace;
+  height: 48px;
+  padding: 0.75rem 0;
+}
+.login .login-form .form-main .username-input {
+  margin-bottom: 1.375rem;
+}
+.login .login-form .form-btn {
+  margin-top: 2rem;
+}
+.login .login-form .form-btn .btn-forget {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -1%;
+  color: #1A1A1A;
+}
+.login .login-form .form-btn .btn-login {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 17.07px;
+  letter-spacing: 1.25%;
+  padding: 0.5rem 4rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  color: #1A1A1A;
+  background: #DAB758;
+  border-radius: 24px;
+  transition: all 0.2s ease-out;
+}
+.login .login-form .form-btn .btn-login:hover {
+  color: #DAB758;
+  background: #1A1A1A;
+  transition: all 0.2s ease;
+}
+.login .login-form .form-signup {
+  margin-top: 1rem;
+}
+.login .login-form .form-signup .signup-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 18px;
+  color: #9F9F9F;
+}
+.login .login-form .form-signup .signup-text span {
+  margin-left: 0.5rem;
+}
+.login .login-form .form-signup .signup-text span a {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 19.5px;
+  letter-spacing: 1.25%;
+  color: #DAB758;
+}
+
+@media screen and (min-width: 425px) {
+  .login .login-form .form-btn .btn-login {
+    margin: 0 0 0 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .login {
+    padding: 0 3rem;
+    margin: 4rem 0 2rem;
+  }
+  .login .login-form h3 {
+    font-size: 3.1875rem;
+    margin-bottom: 3.25rem;
+  }
+  .login .login-form .form-btn {
+    margin-top: 3.5rem;
+  }
+  .login .login-form .form-btn .btn-login {
+    padding: 0.84375rem 5.875rem;
+    margin: 0 0 0 6.375rem;
+  }
+  .login .login-form .form-signup {
+    margin-top: 2.8125rem;
+  }
+  .login .login-form .form-signup .signup-text span {
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .login {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-gap: 2rem;
+    align-items: center;
+    padding: 8.3125rem 3rem 6.875rem;
+    margin: 0;
+    height: 100vh;
+  }
+  .login .login-card {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .login {
+    grid-template-columns: 55% 38%;
+    grid-gap: 5rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .login {
+    grid-template-columns: 929.5px 500px;
+    grid-gap: 10.65625rem;
+    padding: 8.3125rem 209px 6.875rem 111px;
+  }
+  .login .login-form .form-btn .btn-login {
+    margin: 0 0 0 6.3rem;
+  }
+}
+.login-dark {
+  background: #1A1A1A;
+}
+.login-dark .login-form h3 {
+  color: #FFFFFF;
+}
+.login-dark .login-form .form-main .main-input input:focus {
+  background: url(../images/Delete-dark-theme.png) no-repeat 100%;
+  background-size: 24px;
+}
+.login-dark .login-form .form-main .main-input input:focus::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.login-dark .login-form .form-btn .btn-forget {
+  color: #FFFFFF;
+}
+.login-dark .login-form .form-btn .btn-login {
+  color: #1A1A1A;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  margin-left: 6rem;
+}
+.login-dark .login-form .form-btn .btn-login:hover {
+  color: #FFFFFF;
+  background: #1A1A1A;
+  border: 1px solid #FFFFFF;
+}
+.login-dark .login-form .form-signup .signup-text {
+  color: #FFFFFF;
+}
+.login-dark .login-form .form-signup .signup-text span a {
+  background: linear-gradient(96.63deg, #A8BA68 0%, #E4F89D 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.register {
+  background: #1A1A1A;
+  font-family: "Montserrat";
+  padding: 0 1rem;
+}
+.register .header {
+  padding: 2rem 0 0 0rem;
+  display: flex;
+  align-items: center;
+}
+.register .header svg {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1.5rem;
+}
+.register .header h6 {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.0015rem;
+  color: #FFFFFF;
+}
+.register .main-register {
+  padding-bottom: 2rem;
+}
+.register .main-register .register-avatar {
+  width: 14.625rem;
+  height: 14.625rem;
+  box-shadow: 0px 0px 0px 1px #FFFFFF inset;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.3575rem auto 2.25rem;
+  cursor: pointer;
+}
+.register .main-register .register-avatar p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.01rem;
+  color: #FFFFFF;
+  margin-top: 0.5rem;
+}
+.register .main-register .register-form {
+  margin-bottom: 3.9rem;
+}
+.register .main-register .register-form .form-left .main-input label,
+.register .main-register .register-form .form-right .main-input label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.01rem;
+  color: #9F9F9F;
+}
+.register .main-register .register-form .form-left .main-input input[type=text],
+.register .main-register .register-form .form-left .main-input input[type=password],
+.register .main-register .register-form .form-right .main-input input[type=text],
+.register .main-register .register-form .form-right .main-input input[type=password] {
+  width: 100%;
+  display: block;
+  background: inherit;
+  color: #FFFFFF;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #FFFFFF;
+  font-size: 1rem;
+}
+.register .main-register .register-form .form-left .main-input ::-moz-placeholder, .register .main-register .register-form .form-right .main-input ::-moz-placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+.register .main-register .register-form .form-left .main-input :-ms-input-placeholder, .register .main-register .register-form .form-right .main-input :-ms-input-placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+.register .main-register .register-form .form-left .main-input ::placeholder,
+.register .main-register .register-form .form-right .main-input ::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: #9F9F9F;
+}
+.register .main-register .register-form .form-left .main-input input:focus,
+.register .main-register .register-form .form-right .main-input input:focus {
+  border-bottom: 1px solid #E1C579;
+  background: url(../images/Delete-dark-theme.png) no-repeat 100%;
+  background-size: 24px;
+}
+.register .main-register .register-form .form-left .main-input input:focus::-webkit-input-placeholder,
+.register .main-register .register-form .form-right .main-input input:focus::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.register .main-register .register-form .form-left .main-input:not(:first-child),
+.register .main-register .register-form .form-left .phone-input,
+.register .main-register .register-form .form-right .main-input:not(:first-child),
+.register .main-register .register-form .form-right .phone-input {
+  margin-bottom: 1.361875rem;
+}
+.register .main-register .register-form .form-left .main-input:not(:first-child) input,
+.register .main-register .register-form .form-left .phone-input input,
+.register .main-register .register-form .form-right .main-input:not(:first-child) input,
+.register .main-register .register-form .form-right .phone-input input {
+  padding: 0.75rem 0;
+}
+.register .main-register .register-form .form-left .username-input,
+.register .main-register .register-form .form-right .username-input {
+  margin-bottom: 0.861875rem;
+}
+.register .main-register .register-form .form-left .username-input input,
+.register .main-register .register-form .form-right .username-input input {
+  padding: 1rem 0;
+}
+.register .main-register .register-form .form-left .cf-pw-input,
+.register .main-register .register-form .form-right .cf-pw-input {
+  margin-bottom: 0px !important;
+}
+.register .main-register .register-btn {
+  text-align: right;
+}
+.register .main-register .register-btn .btn {
+  padding: 0.875rem 6.0625rem;
+  background: #FFFFFF;
+  color: #1A1A1A;
+  border-radius: 38px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 19.5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 1px #FFFFFF inset;
+}
+.register .main-register .register-btn .btn:hover {
+  background: #1A1A1A;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .register {
+    padding: 0 6.9375rem;
+  }
+  .register .header {
+    padding-top: 4rem;
+  }
+  .register .header svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .register .header h6 {
+    font-size: 1.3125rem;
+  }
+  .register .main-register {
+    padding-bottom: 10.4375rem;
+  }
+  .register .main-register .register-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .register {
+    padding: 0 27.75rem;
+  }
+  .register .header {
+    padding-top: 8.34375rem;
+  }
+}
+.confirmation .header {
+  margin-bottom: 3.20375rem;
+}
+.confirmation .main .main-info {
+  margin-bottom: 4.01625rem;
+}
+.confirmation .main .main-info svg {
+  width: 100%;
+  height: 100%;
+}
+.confirmation .main .main-input {
+  margin-bottom: 3.515rem;
+}
+.confirmation .main .main-input label {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.0015rem;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 1.125rem;
+}
+.confirmation .main .main-input .input-holder {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+.confirmation .main .main-input .input-holder input[type=text] {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: inherit;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0 1rem 1.5rem;
+  text-align: center;
+}
+.confirmation .main .main-btn {
+  padding-bottom: 12.25rem;
+  text-align: right;
+}
+.confirmation .main .main-btn .btn-resend,
+.confirmation .main .main-btn .btn-cf {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 19.5px;
+  letter-spacing: 0.0125rem;
+}
+.confirmation .main .main-btn .btn-resend {
+  padding: 0.875rem 0.9375rem;
+  color: #FFFFFF;
+  background: inherit;
+  border-radius: 38px;
+  box-shadow: 0 0 0 1px #FFFFFF inset;
+  margin-right: 2rem;
+  transition: all 0.3s ease-out;
+}
+.confirmation .main .main-btn .btn-resend:hover {
+  color: #1A1A1A;
+  background: #FFFFFF;
+  transition: all 0.3s ease;
+}
+.confirmation .main .main-btn .btn-cf {
+  padding: 0.875rem 2rem;
+  color: #1A1A1A;
+  background: #FFFFFF;
+  border-radius: 38px;
+  transition: all 0.3s ease-out;
+}
+.confirmation .main .main-btn .btn-cf:hover {
+  color: #FFFFFF;
+  background: #1A1A1A;
+  box-shadow: 0 0 0 1px #FFFFFF inset;
+  transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 425px) {
+  .confirmation .main .main-btn .btn-cf {
+    padding: 0.875rem 4.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .confirmation {
+    padding: 0 10.15234375rem;
+  }
+  .confirmation .main .main-input label {
+    font-size: 1.3125rem;
+  }
+  .confirmation .main .main-input .input-holder input[type=text] {
+    font-size: 3.1875rem;
+    padding: 0 2.1875rem 1.5rem 2.25rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .confirmation {
+    padding: 0 27.75rem;
+  }
+  .confirmation .header {
+    padding-top: 8.3125rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .confirmation {
+    padding: 0 40.609375rem;
+  }
+}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+a,
+p,
+ul, li,
+label {
+  margin-bottom: 0;
+}/*# sourceMappingURL=style.css.map */

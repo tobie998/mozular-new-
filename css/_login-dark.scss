@@ -1,0 +1,62 @@
+.login-dark {
+    background: $black-0;
+
+    .login-form {
+
+        h3 {
+            color: $white;
+        }
+
+        .form-main {
+
+            .main-input {
+
+                input:focus {
+                    background: url(../images/Delete-dark-theme.png) no-repeat 100%;
+                    background-size: 24px;
+                }
+
+                input:focus::-webkit-input-placeholder {
+                    color: $white;
+                }
+            }
+        }
+
+        .form-btn {
+
+            .btn-forget {
+                color: $white;
+            }
+
+            .btn-login {
+                color: $black-0;
+                background: $white;
+                border: 1px solid $white;
+                margin-left: 6rem;
+
+                &:hover {
+                    color: $white;
+                    background: $black-0;
+                    border: 1px solid $white;
+                }
+            }
+        }
+
+        .form-signup {
+
+            .signup-text {
+                color: $white;
+
+                span {
+
+                    a {
+                        background: $green-gradient;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

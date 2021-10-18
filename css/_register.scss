@@ -1,0 +1,187 @@
+.register {
+    background: $black-0;
+    font-family: 'Montserrat';
+    padding: 0 1rem;
+    
+
+    .header {
+        padding: 2rem 0 0 0rem;
+        display: flex;
+        align-items: center;
+
+        svg {
+            width: 1rem;
+            height: 1rem;
+            margin-right: 1.5rem;
+        }
+
+        h6 {
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: 0.0015rem;
+            color: $white;
+        }   
+    }
+
+    .main-register {
+        padding-bottom: 2rem;
+
+        .register-avatar {
+            width: 14.625rem;
+            height: 14.625rem;
+            box-shadow: 0px 0px 0px 1px $white inset;
+            border-radius: 36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 2.3575rem auto 2.25rem;
+            cursor: pointer;
+
+            p {
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 18px;
+                letter-spacing: 0.01rem;
+                color: $white;
+                margin-top: 0.5rem;
+            }
+        }
+
+        .register-form {
+            margin-bottom: 3.9rem;
+
+            .form-left,
+            .form-right {
+
+                .main-input {
+
+                    label {
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        line-height: 18px;
+                        letter-spacing: 0.01rem;
+                        color: $black-5;
+                    }
+
+                    input[type="text"],
+                    input[type="password"] {
+                        width: 100%;
+                        display: block;
+                        background: inherit;
+                        color: $white;
+                        font-weight: 500;
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px solid $white;
+                        font-size: 1rem;
+                    }
+
+                    ::placeholder {
+                        font-size: 1rem;
+                        font-weight: 500;
+                        line-height: 24px;
+                        color: $black-5;
+                    }
+
+                    input:focus {
+                        border-bottom: 1px solid $main-color;
+                        background: url(../images/Delete-dark-theme.png) no-repeat 100%;
+                        background-size: 24px;
+                    }
+
+                    input:focus::-webkit-input-placeholder {
+                        color: $white;
+                        font-weight: 500;
+                    }
+                }
+
+                .main-input:not(:first-child),
+                .phone-input {
+                    margin-bottom: 1.361875rem;
+
+                    input {
+                        padding: 0.75rem 0;
+                    }
+                }
+
+                .username-input {
+                    margin-bottom: 0.861875rem;
+
+                    input {
+                        padding: 1rem 0;
+                    }
+                }
+
+                .cf-pw-input {
+                    margin-bottom: 0px !important;
+                }
+            }
+        }
+
+        .register-btn {
+            text-align: right;
+
+            .btn {
+                padding: 0.875rem 6.0625rem;
+                background: $white;
+                color: $black-0;
+                border-radius: 38px;
+                font-size: 1rem;
+                font-weight: 600;
+                line-height: 19.5px;
+                border: none;
+                outline: none;
+                box-shadow: 0 0 0 1px $white inset;
+
+                &:hover {
+                    background: $black-0;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .register {
+        padding: 0 6.9375rem;
+        
+    
+        .header {
+            padding-top: 4rem;
+    
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+    
+            h6 {
+                font-size: 1.3125rem;
+            }   
+        }
+    
+        .main-register {
+            padding-bottom: 10.4375rem;
+    
+            .register-form {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 2rem;
+            }   
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .register {
+        padding: 0 27.75rem;
+        
+    
+        .header {
+            padding-top: 8.34375rem; 
+        }
+    }
+}
